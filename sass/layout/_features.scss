@@ -1,0 +1,44 @@
+.features {
+  padding-top: var(--first-padding);
+
+  &__list {
+    margin-left: calc(-1 * var(--second-margin));
+    display: flex;
+  }
+
+  &__item {
+    flex-basis: calc(100% / 4 - var(--second-margin));
+    margin-left: var(--second-margin);
+  }
+}
+
+.card-features {
+  &__figure {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: var(--second-margin);
+    height: 120px;
+
+    background-image: linear-gradient(
+      var(--secondary-background),
+      var(--secondary-background)
+    );
+  }
+
+  &__title {
+    margin-bottom: 10px;
+
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: var(--secondary-title);
+  }
+  &__text {
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+    color: var(--secondary-text);
+  }
+}
