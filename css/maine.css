@@ -127,7 +127,6 @@ body {
 }
 
 .container {
-  width: 1200px;
   padding-left: 15px;
   padding-right: 15px;
   margin-left: auto;
@@ -140,27 +139,12 @@ body {
   background-color: var(--third-background);
   border-bottom: 1px solid #ececec;
 }
-.header .container {
-  display: flex;
-  align-items: center;
-}
 
-.nav {
-  display: flex;
-  align-items: center;
-}
 .nav__link:hover, .nav__link:focus {
   color: var(--accent-color);
 }
 .nav__logo {
   margin-right: 93px;
-}
-.nav__list {
-  display: flex;
-  align-items: center;
-}
-.nav__item:not(:first-child) {
-  margin-left: var(--first-margin);
 }
 .nav__item {
   position: relative;
@@ -206,9 +190,6 @@ body {
   margin-left: var(--first-margin);
 }
 .contacts__link {
-  display: flex;
-  align-items: center;
-  justify-content: center;
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
