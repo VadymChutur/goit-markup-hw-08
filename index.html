@@ -69,16 +69,16 @@
     <!--main-->
     <main>
       <!--hero-->
-      <!-- <section class="hero">
+      <section class="hero">
         <div class="container">
           <h1 class="hero__title">Эффективные решения для вашего бизнеса</h1>
           <button type="button" class="hero__btn btn" data-modal-open>
             Заказать услугу
           </button>
         </div>
-      </section> -->
+      </section>
       <!--osobennosti-->
-      <!-- <section class="features">
+      <section class="features">
         <div class="container">
           <h2 class="features__title visually-hidden">Наши особенности</h2>
           <ul class="features__list list">
@@ -135,9 +135,9 @@
             </li>
           </ul>
         </div>
-      </section> -->
+      </section>
       <!--o nas-->
-      <!-- <section class="about">
+      <section class="about">
         <div class="container">
           <h2 class="about__title">Чем мы занимаемся</h2>
 
@@ -173,20 +173,48 @@
             </li>
           </ul>
         </div>
-      </section> -->
+      </section>
       <!--nasha comanda-->
-      <!-- <section class="team">
+      <section class="team">
         <div class="container">
           <h2 class="team__title title">Наша команда</h2>
           <ul class="team-card__list list">
             <li class="team-card__item">
-              <img
-                src="./images/img-masters-1.jpg"
-                alt="мастера"
-                width="270"
-                height="260"
-                class="team-card__img"
-              />
+              <picture>
+                <source
+                  srcset="
+                    ./images/img-masters-1.jpg    1x,
+                    ./images/img-masters-1-2x.jpg 2x,
+                    ./images/img-masters-1-3x.jpg 3x
+                  "
+                  media="(min-width: 1200px)"
+                />
+
+                <source
+                  srcset="
+                    ./images/img-masters-1-tab.jpg    1x,
+                    ./images/img-masters-1-tab-2x.jpg 2x,
+                    ./images/img-masters-1-tab-3x.jpg 3x
+                  "
+                  media="(min-width: 768px)"
+                />
+
+                <source
+                  srcset="
+                    ./images/img-masters-1-mob.jpg    1x,
+                    ./images/img-masters-1-mob-2x.jpg 2x,
+                    ./images/img-masters-1-mob-3x.jpg 3x
+                  "
+                  media="(min-width: 480px)"
+                />
+                <img
+                  src="./images/img-masters-1-mob.jpg"
+                  alt="мастера"
+                  width="450"
+                  height="460"
+                  class="team-card__img"
+                />
+              </picture>
               <div class="team-card__container">
                 <h3 class="team-card__title">Игорь Демьяненко</h3>
                 <p lang="en" class="team-card__text">Product Designer</p>
@@ -247,13 +275,41 @@
             </li>
 
             <li class="team-card__item">
-              <img
-                src="./images/img-masters-2.jpg"
-                alt="мастера"
-                width="270"
-                height="260"
-                class="team-card__img"
-              />
+              <picture>
+                <source
+                  srcset="
+                    ./images/img-masters-2.jpg    1x,
+                    ./images/img-masters-2-2x.jpg 2x,
+                    ./images/img-masters-2-3x.jpg 3x
+                  "
+                  media="(min-width: 1200px)"
+                />
+
+                <source
+                  srcset="
+                    ./images/img-masters-2-tab.jpg    1x,
+                    ./images/img-masters-2-tab-2x.jpg 2x,
+                    ./images/img-masters-2-tab-3x.jpg 3x
+                  "
+                  media="(min-width: 768px)"
+                />
+
+                <source
+                  srcset="
+                    ./images/img-masters-2-mob.jpg    1x,
+                    ./images/img-masters-2-mob-2x.jpg 2x,
+                    ./images/img-masters-2-mob-3x.jpg 3x
+                  "
+                  media="(min-width: 480px)"
+                />
+                <img
+                  src="./images/img-masters-2-mob.jpg"
+                  alt="мастера"
+                  width="450"
+                  height="460"
+                  class="team-card__img"
+                />
+              </picture>
               <div class="team-card__container">
                 <h3 class="team-card__title">Ольга Репина</h3>
                 <p lang="en" class="team-card__text">Frontend Developer</p>
@@ -314,13 +370,41 @@
             </li>
 
             <li class="team-card__item">
-              <img
-                src="./images/img-masters-3.jpg"
-                alt="мастера"
-                width="270"
-                height="260"
-                class="team-card__img"
-              />
+              <picture>
+                <source
+                  srcset="
+                    ./images/img-masters-3.jpg    1x,
+                    ./images/img-masters-3-2x.jpg 2x,
+                    ./images/img-masters-3-3x.jpg 3x
+                  "
+                  media="(min-width: 1200px)"
+                />
+
+                <source
+                  srcset="
+                    ./images/img-masters-3-tab.jpg    1x,
+                    ./images/img-masters-3-tab-2x.jpg 2x,
+                    ./images/img-masters-3-tab-3x.jpg 3x
+                  "
+                  media="(min-width: 768px)"
+                />
+
+                <source
+                  srcset="
+                    ./images/img-masters-3-mob.jpg    1x,
+                    ./images/img-masters-3-mob-2x.jpg 2x,
+                    ./images/img-masters-3-mob-3x.jpg 3x
+                  "
+                  media="(min-width: 480px)"
+                />
+                <img
+                  src="./images/img-masters-3-mob.jpg"
+                  alt="мастера"
+                  width="450"
+                  height="460"
+                  class="team-card__img"
+                />
+              </picture>
               <div class="team-card__container">
                 <h3 class="team-card__title">Николай Тарасов</h3>
                 <p lang="en" class="team-card__text">Marketing</p>
@@ -381,13 +465,41 @@
             </li>
 
             <li class="team-card__item">
-              <img
-                src="./images/img-masters-4.jpg"
-                alt="мастера"
-                width="270"
-                height="260"
-                class="team-card__img"
-              />
+              <picture>
+                <source
+                  srcset="
+                    ./images/img-masters-4.jpg    1x,
+                    ./images/img-masters-4-2x.jpg 2x,
+                    ./images/img-masters-4-3x.jpg 3x
+                  "
+                  media="(min-width: 1200px)"
+                />
+
+                <source
+                  srcset="
+                    ./images/img-masters-4-tab.jpg    1x,
+                    ./images/img-masters-4-tab-2x.jpg 2x,
+                    ./images/img-masters-4-tab-3x.jpg 3x
+                  "
+                  media="(min-width: 768px)"
+                />
+
+                <source
+                  srcset="
+                    ./images/img-masters-4-mob.jpg    1x,
+                    ./images/img-masters-4-mob-2x.jpg 2x,
+                    ./images/img-masters-4-mob-3x.jpg 3x
+                  "
+                  media="(min-width: 480px)"
+                />
+                <img
+                  src="./images/img-masters-4-mob.jpg"
+                  alt="мастера"
+                  width="450"
+                  height="460"
+                  class="team-card__img"
+                />
+              </picture>
               <div class="team-card__container">
                 <h3 class="team-card__title">Михаил Ермаков</h3>
                 <p lang="en" class="team-card__text">UI Designer</p>
@@ -448,8 +560,8 @@
             </li>
           </ul>
         </div>
-      </section> -->
-      <!-- <section class="benefits">
+      </section>
+      <section class="benefits">
         <div class="container">
           <h2 class="benefits__title">Постоянные клиенты</h2>
           <ul class="benefits__list list">
@@ -502,10 +614,10 @@
             </li>
           </ul>
         </div>
-      </section> -->
+      </section>
     </main>
     <!--footer-->
-    <!-- <footer class="footer">
+    <footer class="footer">
       <div class="container">
         <div class="footer__wrap">
           <a
@@ -526,13 +638,17 @@
               </li>
 
               <li class="address__item">
-                <a href="mailto:info@example.com" class="address__link link"
+                <a
+                  href="mailto:info@example.com"
+                  class="address__link address__link--text-color link"
                   >info@example.com</a
                 >
               </li>
 
               <li class="address__item">
-                <a href="tel:+380991111111" class="address__link link"
+                <a
+                  href="tel:+380991111111"
+                  class="address__link address__link--text-color link"
                   >+38 099 111 11 11</a
                 >
               </li>
@@ -596,19 +712,19 @@
             </li>
           </ul>
         </div>
-        <div class="footer__form">
+        <div class="submit__form">
           <form action="./index.html">
-            <h2 class="footer__title">Подпишитесь на рассылку</h2>
+            <h2 class="submit__title">Подпишитесь на рассылку</h2>
             <div class="submit__wrap">
-              <div class="footer__input">
+              <div class="submit__input">
                 <input
                   type="email"
                   id="email-footer"
                   placeholder="E-mail"
-                  class="footer__input--field"
+                  class="submit__input--field"
                   autocomplete="email"
                 />
-                <label for="email-footer" class="footer__label"></label>
+                <label for="email-footer" class="submit__label"></label>
               </div>
               <button type="submit" class="submit__btn btn">
                 Подписаться
@@ -620,7 +736,7 @@
           </form>
         </div>
       </div>
-    </footer> -->
+    </footer>
     <!-- <div class="backdrop is-hidden" data-modal>
       <div class="modal">
         <button type="button" class="modal__btn--close" data-modal-close>

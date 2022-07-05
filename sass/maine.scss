@@ -1,11 +1,14 @@
 // base
-@import "./base/base";
+@import './base/base';
 
 // Utils
-@import "./utils/utils";
+@import './utils/utils';
+
+// mixin
+@import './mixin/mixin';
 
 // components
-@import "./components/components";
+@import './components/components';
 
 // layout
-@import "./layout/layout";
+@import './layout/layout';

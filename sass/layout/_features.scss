@@ -1,14 +1,18 @@
 .features {
-  padding-top: var(--first-padding);
+  padding-top: var(--second-padding);
 
-  &__list {
-    margin-left: calc(-1 * var(--second-margin));
-    display: flex;
-  }
+  // &__list {
+  //   margin-left: calc(-1 * var(--second-margin));
+  //   display: flex;
+  // }
 
   &__item {
-    flex-basis: calc(100% / 4 - var(--second-margin));
-    margin-left: var(--second-margin);
+    //   flex-basis: calc(100% / 4 - var(--second-margin));
+    //   margin-left: var(--second-margin);
+  }
+
+  &__item:not(:last-child) {
+    margin-bottom: var(--third-margin);
   }
 }
 
@@ -33,6 +37,7 @@
     line-height: 1.14;
     letter-spacing: 0.03em;
     text-transform: uppercase;
+    text-align: center;
     color: var(--secondary-title);
   }
   &__text {

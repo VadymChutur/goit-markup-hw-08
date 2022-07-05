@@ -1,7 +1,17 @@
-@mixin font-style(ff, fw, fs, lh, ls) {
-  font-family: ff;
-  font-weight: fw;
-  font-size: fs;
-  line-height: lh;
-  letter-spacing: ls;
+@mixin font-logo($ff: 'Raleway', $fw: 700, $fs: 24px, $lh: 1.16, $ls: 0.03em) {
+  font-family: $ff;
+  font-weight: $fw;
+  font-size: $fs;
+  line-height: $lh;
+  letter-spacing: $ls;
+}
+
+// font-family: 'Raleway', sans-serif;
+
+@mixin font-face($ff, $fw, $fs, $lh, $ls) {
+  font-family: $ff;
+  font-weight: $fw;
+  font-size: $fs;
+  line-height: $lh;
+  letter-spacing: $ls;
 }
