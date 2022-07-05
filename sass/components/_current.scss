@@ -1,14 +1,16 @@
-.header-list .current {
-  color: var(--accent-color);
-}
+@include tablet {
+  .header-list .current {
+    color: var(--accent-color);
+  }
 
-.current::after {
-  position: absolute;
-  display: block;
-  bottom: -32px;
-  content: "";
-  width: 100%;
-  height: 4px;
-  border-radius: 2px;
-  background-color: var(--accent-color);
+  .current::after {
+    position: absolute;
+    display: block;
+    bottom: -34px;
+    content: '';
+    width: 100%;
+    height: 4px;
+    border-radius: 2px;
+    background-color: var(--accent-color);
+  }
 }

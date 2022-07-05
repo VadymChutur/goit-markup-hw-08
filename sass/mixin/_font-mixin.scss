@@ -8,7 +8,7 @@
 
 // font-family: 'Raleway', sans-serif;
 
-@mixin font-face($ff, $fw, $fs, $lh, $ls) {
+@mixin font-face($ff: 'Roboto', $fw: 500, $fs: 14px, $lh: 1.14, $ls: 0.03em) {
   font-family: $ff;
   font-weight: $fw;
   font-size: $fs;

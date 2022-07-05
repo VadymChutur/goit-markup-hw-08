@@ -11,18 +11,39 @@
       var(--six-background),
       var(--six-background)
     ),
-    url(..//images/hero-mobile.jpg);
+    url(..//images/hero-bg-tab-mob.jpg);
   background-repeat: no-repeat;
   background-position: center;
+  background-size: cover;
   max-width: 480px;
   margin: 0 auto;
+
+  @include screen2x {
+    background-image: linear-gradient(
+        var(--six-background),
+        var(--six-background)
+      ),
+      url(..//images/hero-bg-tab-mob-2x.jpg);
+    background-size: cover;
+  }
+
+  @include screen3x {
+    background-image: linear-gradient(
+        var(--six-background),
+        var(--six-background)
+      ),
+      url(..//images/hero-bg-tab-mob-3x.jpg);
+    background-size: cover;
+  }
 
   @include tablet {
     background-image: linear-gradient(
         var(--six-background),
         var(--six-background)
       ),
-      url(..//images/hero-mobile.jpg);
+      url(..//images/hero-bg-tab-mob-2x.jpg);
+    max-width: 768px;
+    margin: 0 auto;
   }
 
   @include desktop {
@@ -30,12 +51,15 @@
         var(--six-background),
         var(--six-background)
       ),
-      url(..//images/hero-bg.jpg);
+      url(..//images/hero-bg-tab-mob-3x.jpg);
+    max-width: 480px;
+    margin: 0 auto;
   }
 
   &__title {
     margin-left: auto;
     margin-right: auto;
+    max-width: 360px;
     // width: 696px;
     margin-bottom: var(--second-margin);
 
@@ -45,15 +69,6 @@
     // line-height: 1.36;
     // text-align: center;
     // letter-spacing: 0.06em;
-    //       font-family: 'Roboto';
-    // font-style: normal;
-    // font-weight: 900;
-    // font-size: 26px;
-    // line-height: 42px;
-    // /* or 162% */
-    // text-align: center;
-    // letter-spacing: 0.06em;
-    // text-transform: uppercase;
     text-transform: uppercase;
     text-align: center;
     color: var(--main-title);

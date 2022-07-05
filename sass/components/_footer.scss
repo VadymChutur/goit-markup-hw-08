@@ -6,6 +6,17 @@
 
   background-color: var(--main-background);
 
+  @include tablet {
+    &__list--wrap {
+      display: flex;
+      justify-content: space-between;
+    }
+
+    &__wrap {
+      margin-left: 76px;
+    }
+  }
+
   & .container {
     // display: flex;
     // align-items: baseline;
@@ -61,6 +72,13 @@
   &__wrap--margin {
     margin-top: var(--fourth-margin);
     // margin-left: var(--seven-margin);
+  }
+
+  @include tablet {
+    &__wrap--margin {
+      margin-top: 5px;
+      margin-right: 89px;
+    }
   }
 
   &__title {
@@ -149,6 +167,14 @@
     background-color: #ffffff;
   }
 
+  @include tablet {
+    &__input--field {
+      display: flex;
+      margin: 0 auto;
+      min-width: 450px;
+    }
+  }
+
   // &__wrap {
   //   display: flex;
   //   flex-wrap: wrap;
@@ -157,7 +183,8 @@
   // }
 
   &__btn {
-    margin-top: var(--fourth-margin);
+    margin-top: 20px;
+    // margin-top: var(--fourth-margin);
     display: flex;
     align-items: center;
     justify-content: center;

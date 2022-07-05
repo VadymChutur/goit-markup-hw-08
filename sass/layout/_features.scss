@@ -1,49 +1,56 @@
-.features {
-  padding-top: var(--second-padding);
+@include tablet {
+  .features {
+    padding-top: var(--second-padding);
+    padding-bottom: var(--second-padding);
 
-  // &__list {
-  //   margin-left: calc(-1 * var(--second-margin));
-  //   display: flex;
-  // }
+    &__list {
+      margin-left: calc(-1 * var(--second-margin));
+      margin-bottom: calc(-1 * var(--second-margin));
+      display: flex;
+      flex-wrap: wrap;
+    }
 
-  &__item {
-    //   flex-basis: calc(100% / 4 - var(--second-margin));
-    //   margin-left: var(--second-margin);
+    &__item {
+      flex-basis: calc(100% / 2 - var(--second-margin));
+
+      margin-left: var(--second-margin);
+      margin-bottom: var(--second-margin);
+    }
+
+    // &__item:not(:last-child) {
+    //   margin-bottom: var(--third-margin);
+    // }
   }
 
-  &__item:not(:last-child) {
-    margin-bottom: var(--third-margin);
-  }
-}
+  .card-features {
+    &__figure {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-bottom: var(--second-margin);
+      height: 120px;
 
-.card-features {
-  &__figure {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-bottom: var(--second-margin);
-    height: 120px;
+      background-image: linear-gradient(
+        var(--secondary-background),
+        var(--secondary-background)
+      );
+    }
 
-    background-image: linear-gradient(
-      var(--secondary-background),
-      var(--secondary-background)
-    );
-  }
+    &__title {
+      margin-bottom: 10px;
 
-  &__title {
-    margin-bottom: 10px;
-
-    font-size: 14px;
-    line-height: 1.14;
-    letter-spacing: 0.03em;
-    text-transform: uppercase;
-    text-align: center;
-    color: var(--secondary-title);
-  }
-  &__text {
-    font-size: 14px;
-    line-height: 1.71;
-    letter-spacing: 0.03em;
-    color: var(--secondary-text);
+      font-size: 14px;
+      line-height: 1.14;
+      letter-spacing: 0.03em;
+      text-transform: uppercase;
+      // text-align: center;
+      color: var(--secondary-title);
+    }
+    &__text {
+      font-size: 14px;
+      line-height: 1.71;
+      letter-spacing: 0.03em;
+      color: var(--secondary-text);
+    }
   }
 }

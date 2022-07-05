@@ -1,17 +1,23 @@
 .portfolio {
-  padding-top: var(--first-padding);
-  padding-bottom: var(--first-padding);
+  padding-top: var(--second-padding);
+  padding-bottom: var(--second-padding);
+  // padding-top: var(--first-padding);
+  // padding-bottom: var(--first-padding);
 }
 
 .filter {
   &__list {
     display: flex;
-    justify-content: center;
-    margin-bottom: var(--first-margin);
+    flex-wrap: wrap;
+    // justify-content: center;
+    margin-left: calc(-1 * var(--fitth-margin));
+    margin-bottom: calc(-1 * var(--nine-margin));
+    margin-bottom: var(--eight-margin);
   }
 
-  &__item:not(:first-child) {
+  &__item {
     margin-left: var(--fitth-margin);
+    margin-bottom: var(--nine-margin);
   }
   &__btn {
     padding: 6px 22px;
@@ -40,13 +46,13 @@
 }
 
 .card {
-  display: flex;
-  flex-wrap: wrap;
+  // display: flex;
+  // flex-wrap: wrap;
   margin-left: calc(-1 * var(--second-margin));
   margin-top: calc(-1 * var(--second-margin));
 
   &__item {
-    flex-basis: calc(100% / 3 - var(--second-margin));
+    flex-basis: calc(100% / 1 - var(--second-margin));
     margin-left: var(--second-margin);
     margin-top: var(--second-margin);
   }
@@ -70,7 +76,8 @@
     left: 0;
     width: 100%;
     height: 100%;
-    padding: 63px 24px;
+    padding: 77px 24px;
+    // padding: 63px 24px;
 
     font-size: 18px;
     line-height: 1.56;

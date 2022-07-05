@@ -18,23 +18,30 @@
 }
 
 .team-card {
-  // &__list {
-  //   display: flex;
-  //   margin-left: calc(-1 * var(--second-margin));
-  // }
+  @include tablet {
+    &__list {
+      display: flex;
+      flex-wrap: wrap;
+      margin-bottom: calc(-1 * var(--second-margin));
+      margin-left: calc(-1 * var(--second-margin));
+    }
+
+    &__item {
+      flex-basis: calc(100% / 2 - var(--second-margin));
+      margin-bottom: var(--second-margin);
+      margin-left: var(--second-margin);
+    }
+  }
 
   &__item {
-    //   flex-basis: calc(100% / 4 - var(--second-margin));
-    //   margin-left: var(--second-margin);
-
     box-shadow: var(--box-shadow);
     border-radius: 0px 0px 4px 4px;
     background-color: var(--third-background);
   }
 
-  &__item:not(:last-child) {
-    margin-bottom: var(--second-margin);
-  }
+  // &__item:not(:last-child) {
+  //   margin-bottom: var(--second-margin);
+  // }
 
   &__container {
     padding-top: var(--second-margin);
