@@ -9,10 +9,12 @@
   &__list {
     display: flex;
     flex-wrap: wrap;
-    // justify-content: center;
     margin-left: calc(-1 * var(--fitth-margin));
     margin-bottom: calc(-1 * var(--nine-margin));
-    margin-bottom: var(--eight-margin);
+
+    @include tablet {
+      justify-content: center;
+    }
   }
 
   &__item {
@@ -46,8 +48,13 @@
 }
 
 .card {
-  // display: flex;
-  // flex-wrap: wrap;
+  @include tablet {
+    & {
+      display: flex;
+      flex-wrap: wrap;
+    }
+  }
+
   margin-left: calc(-1 * var(--second-margin));
   margin-top: calc(-1 * var(--second-margin));
 
@@ -77,6 +84,7 @@
     width: 100%;
     height: 100%;
     padding: 77px 24px;
+
     // padding: 63px 24px;
 
     font-size: 18px;
@@ -117,5 +125,15 @@
   &__link:hover,
   &__link:focus {
     box-shadow: var(--box-shadow-second);
+  }
+
+  @include tablet {
+    &__item {
+      flex-basis: calc(100% / 2 - var(--second-margin));
+    }
+
+    &__copy {
+      padding: 49px 24px 77px 24px;
+    }
   }
 }
