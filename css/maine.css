@@ -871,6 +871,11 @@ body {
   border-radius: 0px 0px 4px 4px;
   background-color: var(--third-background);
 }
+@media screen and (max-width: 767px) {
+  .team-card__item:not(:last-child) {
+    margin-bottom: var(--second-margin);
+  }
+}
 .team-card__container {
   padding-top: var(--second-margin);
   padding-bottom: var(--second-margin);

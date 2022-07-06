@@ -46,6 +46,12 @@
     background-color: var(--third-background);
   }
 
+  @include mobile {
+    &__item:not(:last-child) {
+      margin-bottom: var(--second-margin);
+    }
+  }
+
   &__container {
     padding-top: var(--second-margin);
     padding-bottom: var(--second-margin);
