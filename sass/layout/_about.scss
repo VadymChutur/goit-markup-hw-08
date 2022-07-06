@@ -18,10 +18,8 @@
     &__title {
       margin-bottom: var(--first-margin);
 
-      font-size: 36px;
-      line-height: 1.16;
+      @include font-face(null, null, 36px, 1.16, 0.03em);
       text-align: center;
-      letter-spacing: 0.03em;
       color: var(--secondary-title);
     }
 
@@ -44,11 +42,8 @@
       padding-top: 27px;
       padding-bottom: 27px;
 
-      font-weight: 700;
-      font-size: 14px;
-      line-height: 1.14;
+      @include font-face(null, 700, 14px, 1.14, 0.03em);
       text-align: center;
-      letter-spacing: 0.03em;
       text-transform: uppercase;
 
       background-color: var(--seven-backgound);

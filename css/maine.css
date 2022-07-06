@@ -798,8 +798,8 @@ body {
     margin-bottom: var(--first-margin);
     font-size: 36px;
     line-height: 1.16;
-    text-align: center;
     letter-spacing: 0.03em;
+    text-align: center;
     color: var(--secondary-title);
   }
   .about__list {
@@ -821,8 +821,8 @@ body {
     font-weight: 700;
     font-size: 14px;
     line-height: 1.14;
-    text-align: center;
     letter-spacing: 0.03em;
+    text-align: center;
     text-transform: uppercase;
     background-color: var(--seven-backgound);
     color: var(--main-title);
@@ -843,8 +843,8 @@ body {
   margin-bottom: var(--first-margin);
   font-size: 36px;
   line-height: 1.16;
-  text-align: center;
   letter-spacing: 0.03em;
+  text-align: center;
   color: var(--secondary-title);
 }
 
@@ -880,15 +880,15 @@ body {
   font-weight: 500;
   font-size: 16px;
   line-height: 1.18;
-  text-align: center;
   letter-spacing: 0.03em;
+  text-align: center;
   color: var(--secondary-title);
 }
 .team-card__text {
   margin-bottom: var(--six-margin);
   line-height: 1.18;
-  text-align: center;
   letter-spacing: 0.03em;
+  text-align: center;
   color: var(--secondary-text);
 }
 
@@ -934,8 +934,8 @@ body {
   margin-bottom: var(--second-margin);
   font-size: 36px;
   line-height: 1.16;
-  text-align: center;
   letter-spacing: 0.03em;
+  text-align: center;
   color: var(--secondary-title);
 }
 .benefits__list {
@@ -1013,8 +1013,8 @@ body {
   font-weight: 500;
   font-size: 16px;
   line-height: 1.62;
-  text-align: center;
   letter-spacing: 0.03em;
+  text-align: center;
   color: var(--secondary-title);
   border-radius: 4px;
   border-color: transparent;
@@ -1161,8 +1161,8 @@ body {
   margin-bottom: 30px;
   font-size: 20px;
   line-height: 1.15;
-  text-align: center;
   letter-spacing: 0.03em;
+  text-align: center;
   color: var(--main-text);
 }
 .modal__group {

@@ -11,10 +11,8 @@
     // margin-bottom: var(--first-margin);
     margin-bottom: var(--second-margin);
 
-    font-size: 36px;
-    line-height: 1.16;
+    @include font-face(null, null, 36px, 1.16, 0.03em);
     text-align: center;
-    letter-spacing: 0.03em;
     color: var(--secondary-title);
   }
 

@@ -12,10 +12,8 @@
   &__title {
     margin-bottom: var(--first-margin);
 
-    font-size: 36px;
-    line-height: 1.16;
+    @include font-face(null, null, 36px, 1.16, 0.03em);
     text-align: center;
-    letter-spacing: 0.03em;
     color: var(--secondary-title);
   }
 }
@@ -56,19 +54,15 @@
   &__title {
     margin-bottom: var(--third-margin);
 
-    font-weight: 500;
-    font-size: 16px;
-    line-height: 1.18;
+    @include font-face(null, 500, 16px, 1.18, 0.03em);
     text-align: center;
-    letter-spacing: 0.03em;
     color: var(--secondary-title);
   }
   &__text {
     margin-bottom: var(--six-margin);
 
-    line-height: 1.18;
+    @include font-face(null, null, null, 1.18, 0.03em);
     text-align: center;
-    letter-spacing: 0.03em;
     color: var(--secondary-text);
   }
 }
