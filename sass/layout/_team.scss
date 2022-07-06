@@ -1,8 +1,11 @@
 .team {
   padding-top: var(--second-padding);
   padding-bottom: var(--second-padding);
-  // padding-top: var(--first-padding);
-  // padding-bottom: var(--first-padding);
+
+  @include desktop {
+    padding-top: var(--first-padding);
+    padding-bottom: var(--first-padding);
+  }
 
   background-color: var(--secondary-background);
 
@@ -33,15 +36,17 @@
     }
   }
 
+  @include desktop {
+    &__item {
+      flex-basis: calc(100% / 4 - var(--second-margin));
+    }
+  }
+
   &__item {
     box-shadow: var(--box-shadow);
     border-radius: 0px 0px 4px 4px;
     background-color: var(--third-background);
   }
-
-  // &__item:not(:last-child) {
-  //   margin-bottom: var(--second-margin);
-  // }
 
   &__container {
     padding-top: var(--second-margin);

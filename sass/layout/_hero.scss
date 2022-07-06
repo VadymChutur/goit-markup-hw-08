@@ -1,8 +1,10 @@
 .hero {
   padding-top: 118px;
   padding-bottom: 118px;
-  // padding-top: 200px;
-  // padding-bottom: 200px;
+  @include desktop {
+    padding-top: 200px;
+    padding-bottom: 200px;
+  }
 }
 
 .hero {
@@ -11,7 +13,7 @@
       var(--six-background),
       var(--six-background)
     ),
-    url(..//images/hero-bg-tab-mob.jpg);
+    url(..//images/hero-bg-mob.jpg);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -23,7 +25,7 @@
         var(--six-background),
         var(--six-background)
       ),
-      url(..//images/hero-bg-tab-mob-2x.jpg);
+      url(..//images/hero-bg-mob-2x.jpg);
     background-size: cover;
   }
 
@@ -32,7 +34,7 @@
         var(--six-background),
         var(--six-background)
       ),
-      url(..//images/hero-bg-tab-mob-3x.jpg);
+      url(..//images/hero-bg-mob-3x.jpg);
     background-size: cover;
   }
 
@@ -41,9 +43,27 @@
         var(--six-background),
         var(--six-background)
       ),
-      url(..//images/hero-bg-tab-mob-2x.jpg);
+      url(..//images/hero-bg-tab.jpg);
     max-width: 768px;
     margin: 0 auto;
+
+    @include screen2x {
+      background-image: linear-gradient(
+          var(--six-background),
+          var(--six-background)
+        ),
+        url(..//images/hero-bg-tab-2x.jpg);
+      background-size: cover;
+    }
+
+    @include screen3x {
+      background-image: linear-gradient(
+          var(--six-background),
+          var(--six-background)
+        ),
+        url(..//images/hero-bg-tab-3x.jpg);
+      background-size: cover;
+    }
   }
 
   @include desktop {
@@ -51,27 +71,44 @@
         var(--six-background),
         var(--six-background)
       ),
-      url(..//images/hero-bg-tab-mob-3x.jpg);
-    max-width: 480px;
+      url(..//images/hero-bg.jpg);
+    max-width: 1200px;
     margin: 0 auto;
+
+    @include screen2x {
+      background-image: linear-gradient(
+          var(--six-background),
+          var(--six-background)
+        ),
+        url(..//images/hero-bg-2x.jpg);
+      background-size: cover;
+    }
+
+    @include screen3x {
+      background-image: linear-gradient(
+          var(--six-background),
+          var(--six-background)
+        ),
+        url(..//images/hero-bg-3x.jpg);
+      background-size: cover;
+    }
   }
 
   &__title {
     margin-left: auto;
     margin-right: auto;
     max-width: 360px;
-    // width: 696px;
     margin-bottom: var(--second-margin);
 
     @include font-face(null, 900, 26px, 1.62, 0.06em);
-    // font-weight: 900;
-    // font-size: 44px;
-    // line-height: 1.36;
-    // text-align: center;
-    // letter-spacing: 0.06em;
     text-transform: uppercase;
     text-align: center;
     color: var(--main-title);
+
+    @include desktop {
+      max-width: 696px;
+      @include font-face(null, 900, 44px, 1.36, 0.06em);
+    }
   }
 
   &__btn {

@@ -1,10 +1,20 @@
 .footer {
-  // padding-top: var(--fourth-margin);
-  // padding-bottom: var(--fourth-margin);
   padding-top: var(--second-padding);
   padding-bottom: var(--second-padding);
 
   background-color: var(--main-background);
+
+  @include mobile {
+    &__wrap {
+      text-align: center;
+    }
+  }
+
+  @include tablet-to-desktop {
+    &__wrap {
+      text-align: center;
+    }
+  }
 
   @include tablet {
     &__list--wrap {
@@ -17,17 +27,19 @@
     }
   }
 
-  & .container {
-    // display: flex;
-    // align-items: baseline;
-  }
+  @include desktop {
+    & .container {
+      display: flex;
+      align-items: baseline;
+    }
 
-  // &__form {
-  //   margin-left: 93px;
-  // }
+    &__form {
+      margin-left: 93px;
+    }
 
-  &__wrap {
-    text-align: center;
+    &__wrap {
+      margin-left: 0;
+    }
   }
 }
 
@@ -41,18 +53,26 @@
 }
 
 .address {
-  text-align: center;
+  @include mobile {
+    text-align: center;
+  }
+
+  @include tablet-to-desktop {
+    text-align: center;
+  }
+
   margin-top: 20px;
 
   &__item:not(:first-child) {
-    // margin-top: 9px;
     margin-top: 8px;
+
+    @include desktop {
+      margin-top: 9px;
+    }
   }
 
   &__link {
-    font-size: 14px;
-    line-height: 1.71;
-    letter-spacing: 0.03em;
+    @include font-face(null, null, 14px, 1.71, 0.03em);
     color: var(--main-title);
 
     transition: color 250ms cubic-bezier(var(--cubic-bezier));
@@ -71,7 +91,6 @@
 .soc {
   &__wrap--margin {
     margin-top: var(--fourth-margin);
-    // margin-left: var(--seven-margin);
   }
 
   @include tablet {
@@ -81,13 +100,19 @@
     }
   }
 
+  @include desktop {
+    &__wrap--margin {
+      margin-top: 15px;
+      margin-left: var(--seven-margin);
+      margin-right: 93px;
+    }
+  }
+
   &__title {
     text-align: center;
     margin-bottom: 20px;
 
-    font-size: 14px;
-    line-height: 1.14;
-    letter-spacing: 0.03em;
+    @include font-face(null, null, 14px, 1.14, 0.03em);
     text-transform: uppercase;
     color: var(--main-title);
   }
@@ -128,9 +153,7 @@
     text-align: center;
     margin-bottom: 20px;
 
-    font-size: 14px;
-    line-height: 1.14;
-    letter-spacing: 0.03em;
+    @include font-face(null, null, 14px, 1.14, 0.03em);
     text-transform: uppercase;
     color: var(--main-title);
   }
@@ -141,9 +164,7 @@
     height: 50px;
     border: 1px solid var(--border-color-second);
     border-radius: 4px;
-    font-size: 16px;
-    line-height: 1.25;
-    letter-spacing: 0.03em;
+    @include font-face(null, null, 16px, 1.25, 0.03em);
     color: var(--five-text);
     background-color: transparent;
     outline: none;
@@ -167,28 +188,11 @@
     background-color: #ffffff;
   }
 
-  @include tablet {
-    &__input--field {
-      display: flex;
-      margin: 0 auto;
-      min-width: 450px;
-    }
-  }
-
-  // &__wrap {
-  //   display: flex;
-  //   flex-wrap: wrap;
-  //   align-items: center;
-  //   justify-content: center;
-  // }
-
   &__btn {
     margin-top: 20px;
-    // margin-top: var(--fourth-margin);
     display: flex;
     align-items: center;
     justify-content: center;
-    // margin-left: 12px;
 
     color: var(--main-title);
     background-color: var(--accent-color);
@@ -204,5 +208,34 @@
     color: var(--accent-color);
     background-color: var(--secondary-background);
     box-shadow: var(--box-shadow-four);
+  }
+
+  @include tablet {
+    &__input--field {
+      display: flex;
+      margin: 0 auto;
+      min-width: 450px;
+    }
+  }
+
+  @include desktop {
+    &__form {
+      margin-top: 12px;
+    }
+
+    &__wrap {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    &__input--field {
+      min-width: 358px;
+    }
+
+    &__btn {
+      margin-top: 0;
+      margin-left: 12px;
+    }
   }
 }

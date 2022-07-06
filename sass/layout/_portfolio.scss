@@ -1,25 +1,32 @@
 .portfolio {
   padding-top: var(--second-padding);
   padding-bottom: var(--second-padding);
-  // padding-top: var(--first-padding);
-  // padding-bottom: var(--first-padding);
+  @include desktop {
+    padding-top: var(--first-padding);
+    padding-bottom: var(--first-padding);
+  }
 }
 
 .filter {
   &__list {
     display: flex;
     flex-wrap: wrap;
-    margin-left: calc(-1 * var(--fitth-margin));
-    margin-bottom: calc(-1 * var(--nine-margin));
+    gap: var(--fitth-margin);
+    margin-bottom: var(--second-margin);
+    // margin-left: calc(-1 * var(--fitth-margin));
+    // margin-bottom: calc(-1 * var(--nine-margin));
 
     @include tablet {
       justify-content: center;
     }
+    @include desktop {
+      margin-bottom: var(--first-margin);
+    }
   }
 
   &__item {
-    margin-left: var(--fitth-margin);
-    margin-bottom: var(--nine-margin);
+    // margin-left: var(--fitth-margin);
+    // margin-bottom: var(--nine-margin);
   }
   &__btn {
     padding: 6px 22px;
@@ -48,20 +55,13 @@
 }
 
 .card {
-  @include tablet {
-    & {
-      display: flex;
-      flex-wrap: wrap;
-    }
-  }
+  display: flex;
+  flex-wrap: wrap;
 
-  margin-left: calc(-1 * var(--second-margin));
-  margin-top: calc(-1 * var(--second-margin));
+  gap: var(--second-margin);
 
   &__item {
-    flex-basis: calc(100% / 1 - var(--second-margin));
-    margin-left: var(--second-margin);
-    margin-top: var(--second-margin);
+    // flex-basis: calc(100% / 2 - var(--second-margin));
   }
 
   /* .portfolio-item-preview:hover .portfolio-img-text,
@@ -84,8 +84,6 @@
     width: 100%;
     height: 100%;
     padding: 77px 24px;
-
-    // padding: 63px 24px;
 
     font-size: 18px;
     line-height: 1.56;
@@ -129,11 +127,21 @@
 
   @include tablet {
     &__item {
-      flex-basis: calc(100% / 2 - var(--second-margin));
+      flex-basis: calc((100% - var(--second-margin)) / 2);
     }
 
     &__copy {
       padding: 49px 24px 77px 24px;
+    }
+  }
+
+  @include desktop {
+    &__item {
+      flex-basis: calc((100% - var(--ten-margin)) / 3);
+    }
+
+    &__copy {
+      padding: 63px 24px;
     }
   }
 }

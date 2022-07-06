@@ -1,56 +1,68 @@
-@include tablet {
-  .features {
-    padding-top: var(--second-padding);
-    padding-bottom: var(--second-padding);
+.features {
+  padding-top: var(--second-padding);
+  padding-bottom: var(--second-padding);
 
-    &__list {
-      margin-left: calc(-1 * var(--second-margin));
-      margin-bottom: calc(-1 * var(--second-margin));
-      display: flex;
-      flex-wrap: wrap;
-    }
-
-    &__item {
-      flex-basis: calc(100% / 2 - var(--second-margin));
-
-      margin-left: var(--second-margin);
-      margin-bottom: var(--second-margin);
-    }
-
-    // &__item:not(:last-child) {
-    //   margin-bottom: var(--third-margin);
-    // }
+  @include desktop {
+    padding-top: var(--first-padding);
+    padding-bottom: 0;
   }
 
-  .card-features {
-    &__figure {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      margin-bottom: var(--second-margin);
-      height: 120px;
+  &__list {
+    margin-left: calc(-1 * var(--second-margin));
+    margin-bottom: calc(-1 * var(--second-margin));
+    display: flex;
+    flex-wrap: wrap;
+  }
 
-      background-image: linear-gradient(
-        var(--secondary-background),
-        var(--secondary-background)
-      );
-    }
+  &__item {
+    margin-left: var(--second-margin);
+    margin-bottom: var(--second-margin);
+  }
 
-    &__title {
-      margin-bottom: 10px;
+  @include tablet {
+    &__item {
+      flex-basis: calc(100% / 2 - var(--second-margin));
+    }
+  }
 
-      font-size: 14px;
-      line-height: 1.14;
-      letter-spacing: 0.03em;
-      text-transform: uppercase;
-      // text-align: center;
-      color: var(--secondary-title);
+  @include desktop {
+    &__item {
+      flex-basis: calc(100% / 4 - var(--second-margin));
     }
-    &__text {
-      font-size: 14px;
-      line-height: 1.71;
-      letter-spacing: 0.03em;
-      color: var(--secondary-text);
+  }
+}
+
+.card-features {
+  &__figure {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: var(--second-margin);
+    height: 120px;
+
+    background-image: linear-gradient(
+      var(--secondary-background),
+      var(--secondary-background)
+    );
+  }
+
+  &__title {
+    margin-bottom: 10px;
+
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: var(--secondary-title);
+
+    @include mobile {
+      text-align: center;
     }
+  }
+  &__text {
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+    color: var(--secondary-text);
   }
 }

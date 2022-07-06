@@ -1,7 +1,4 @@
 .header {
-  padding-top: 24px;
-  padding-bottom: 25px;
-
   background-color: var(--third-background);
   border-bottom: 1px solid #ececec;
 
@@ -13,12 +10,10 @@
 
 .logo {
   @include font-logo();
-  // font-family: 'Raleway', sans-serif;
-  // font-weight: 700;
-  // font-size: 26px;
-  // line-height: 1.19;
-  // letter-spacing: 0.03em;
   color: var(--secondary-color);
+  @include desktop {
+    @include font-logo(null, 700, 26px, 1.19, 0.03em);
+  }
 
   transition: color 250ms cubic-bezier(var(--cubic-bezier));
 
@@ -102,7 +97,9 @@
 
     &__logo {
       margin-right: 88px;
-      // margin-right: 93px;
+      @include desktop {
+        margin-right: 93px;
+      }
     }
 
     &__list {
@@ -115,7 +112,6 @@
     }
 
     &__item {
-      // display: none;
       position: relative;
     }
 
@@ -148,12 +144,6 @@
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    // align-items: center;
-
-    &__item:not(:first-child) {
-      margin-top: var(--third-margin);
-      // margin-left: var(--first-margin);
-    }
 
     &__link {
       display: flex;
@@ -179,5 +169,28 @@
   .phone-icon {
     color: currentColor;
     margin-right: 10px;
+  }
+}
+
+@include tablet-to-desktop {
+  .contacts__item:not(:first-child) {
+    margin-top: var(--third-margin);
+  }
+}
+
+@include desktop {
+  .header {
+    padding-top: 24px;
+    padding-bottom: 25px;
+  }
+
+  .contacts {
+    flex-direction: row;
+    align-items: center;
+
+    &__item {
+      margin-top: 0;
+      margin-left: var(--first-margin);
+    }
   }
 }

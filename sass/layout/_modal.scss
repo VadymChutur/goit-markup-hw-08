@@ -28,12 +28,15 @@
   transform: translate(-50%, -50%) scale(1);
   min-width: 450px;
   min-height: 609px;
-  // min-width: 528px;
-  // min-height: 581px;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 4px;
   background-color: var(--third-background);
+
+  @include desktop {
+    min-width: 528px;
+    min-height: 581px;
+  }
 
   transition: opacity 250ms cubic-bezier(var(--cubic-bezier)),
     transform 250ms cubic-bezier(var(--cubic-bezier));
@@ -196,11 +199,15 @@
   &__text {
     cursor: pointer;
     margin-left: 24px;
-    // margin-left: 36px;
+    @include desktop {
+      margin-left: 36px;
+    }
+
     @include font-face(null, 400, 12px, 1.16, 0.03em);
-    // font-size: 14px;
-    // line-height: 1.71;
-    // letter-spacing: 0.03em;
+
+    @include desktop {
+      @include font-face(null, 400, 14px, 1.71, 0.03em);
+    }
     color: var(--secondary-text);
   }
 
@@ -217,7 +224,9 @@
     position: absolute;
     top: 2px;
     left: 0px;
-    // left: 12px;
+    @include desktop {
+      left: 12px;
+    }
     border: 2px solid var(--main-text);
     border-radius: 2px;
     fill: transparent;

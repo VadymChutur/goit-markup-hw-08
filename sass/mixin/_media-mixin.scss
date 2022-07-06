@@ -16,6 +16,12 @@
   }
 }
 
+@mixin tablet-to-desktop {
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    @content;
+  }
+}
+
 @mixin screen2x {
   @media (min-device-pixel-ratio: 2),
     (-webkit-min-device-pixel-ratio: 2),

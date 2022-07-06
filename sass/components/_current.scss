@@ -14,3 +14,9 @@
     background-color: var(--accent-color);
   }
 }
+
+@include desktop {
+  .current::after {
+    bottom: -32px;
+  }
+}
