@@ -19,26 +19,23 @@
   @include tablet {
     &__list--wrap {
       display: flex;
-      justify-content: space-between;
-    }
-
-    &__wrap {
-      margin-left: 76px;
+      justify-content: space-around;
+      align-items: baseline;
     }
   }
 
   @include desktop {
     & .container {
       display: flex;
-      align-items: baseline;
+      justify-content: space-between;
     }
 
-    &__form {
-      margin-left: 93px;
+    &__list--wrap {
+      align-items: stretch;
     }
 
     &__wrap {
-      margin-left: 0;
+      margin-right: 70px;
     }
   }
 }
@@ -53,21 +50,23 @@
 }
 
 .address {
+  margin-top: 20px;
+
+  &__item:not(:last-child) {
+    margin-bottom: 9px;
+  }
+
   @include mobile {
     text-align: center;
+    &__item:not(:last-child) {
+      margin-bottom: 8px;
+    }
   }
 
   @include tablet-to-desktop {
     text-align: center;
-  }
-
-  margin-top: 20px;
-
-  &__item:not(:first-child) {
-    margin-top: 8px;
-
-    @include desktop {
-      margin-top: 9px;
+    &__item:not(:last-child) {
+      margin-bottom: 8px;
     }
   }
 
@@ -89,22 +88,9 @@
 }
 
 .soc {
-  &__wrap--margin {
-    margin-top: var(--fourth-margin);
-  }
-
-  @include tablet {
+  @include mobile {
     &__wrap--margin {
-      margin-top: 5px;
-      margin-right: 89px;
-    }
-  }
-
-  @include desktop {
-    &__wrap--margin {
-      margin-top: 15px;
-      margin-left: var(--seven-margin);
-      margin-right: 93px;
+      margin-top: var(--fourth-margin);
     }
   }
 
@@ -128,10 +114,6 @@
     height: 44px;
   }
 
-  &__item:last-child {
-    margin-right: 0;
-  }
-
   &__link--color {
     background: rgba(255, 255, 255, 0.1);
     color: var(--main-title);
@@ -145,8 +127,16 @@
 }
 
 .submit {
-  &__form {
-    margin-top: var(--fourth-margin);
+  @include mobile {
+    &__form {
+      margin-top: var(--fourth-margin);
+    }
+  }
+
+  @include tablet-to-desktop {
+    &__form {
+      margin-top: var(--fourth-margin);
+    }
   }
 
   &__title {
@@ -189,7 +179,14 @@
   }
 
   &__btn {
-    margin-top: 20px;
+    @include mobile {
+      margin-top: 20px;
+    }
+
+    @include tablet-to-desktop {
+      margin-top: 20px;
+    }
+
     display: flex;
     align-items: center;
     justify-content: center;
@@ -219,10 +216,6 @@
   }
 
   @include desktop {
-    &__form {
-      margin-top: 12px;
-    }
-
     &__wrap {
       display: flex;
       align-items: center;
@@ -234,7 +227,6 @@
     }
 
     &__btn {
-      margin-top: 0;
       margin-left: 12px;
     }
   }
