@@ -72,7 +72,7 @@
   &__copy {
     @include mobile320 {
       padding: 31px 12px;
-      @include font-face(null, null, 12px, 1.16, 0.03em);
+      @include font-face(null, null, 14px, 1.14, 0.03em);
     }
     position: absolute;
     transform: translateY(120%);
