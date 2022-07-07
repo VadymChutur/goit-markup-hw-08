@@ -1069,6 +1069,14 @@ body {
   background-color: var(--eight-background);
   transition: transform 250ms cubic-bezier(var(--cubic-bezier));
 }
+@media screen and (max-width: 420px) {
+  .card__copy {
+    padding: 31px 12px;
+    font-size: 12px;
+    line-height: 1.16;
+    letter-spacing: 0.03em;
+  }
+}
 .card__wrap {
   padding: 20px 24px;
   border: 1px solid #eeeeee;
