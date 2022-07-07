@@ -167,6 +167,8 @@ body {
     height: 100vh;
     width: 100vw;
     background-color: var(--four-color);
+    opacity: 1;
+    transition: opacity 250ms cubic-bezier(var(--cubic-bezier)), visibility 250ms cubic-bezier(var(--cubic-bezier));
   }
   .mob-menu__item:not(:last-child) {
     margin-bottom: 32px;
