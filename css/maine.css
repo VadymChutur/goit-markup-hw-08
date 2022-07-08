@@ -132,7 +132,12 @@ body {
     background-color: var(--accent-color);
   }
 }
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 650px) and (max-width: 699px) {
+  .current::after {
+    bottom: -29px;
+  }
+}
+@media screen and (min-width: 700px) and (max-width: 1199px) {
   .current::after {
     bottom: -34px;
   }

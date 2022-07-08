@@ -15,7 +15,13 @@
   }
 }
 
-@include tablet-l {
+@include after-16-9 {
+  .current::after {
+    bottom: -29px;
+  }
+}
+
+@include after-16-10 {
   .current::after {
     bottom: -34px;
   }

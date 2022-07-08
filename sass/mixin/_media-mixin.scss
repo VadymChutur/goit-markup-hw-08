@@ -51,3 +51,15 @@
     @content;
   }
 }
+
+@mixin after-16-9 {
+  @media screen and (min-width: 650px) and (max-width: 699px) {
+    @content;
+  }
+}
+
+@mixin after-16-10 {
+  @media screen and (min-width: 700px) and (max-width: 1199px) {
+    @content;
+  }
+}
