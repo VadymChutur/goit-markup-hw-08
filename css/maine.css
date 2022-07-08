@@ -116,7 +116,7 @@ body {
   transition: color 250ms cubic-bezier(var(--cubic-bezier)), border-color 250ms cubic-bezier(var(--cubic-bezier)), background-color 250ms cubic-bezier(var(--cubic-bezier)), box-shadow 250ms cubic-bezier(var(--cubic-bezier));
 }
 
-@media screen and (min-width: 700px) {
+@media screen and (min-width: 650px) {
   .header-list .current {
     color: var(--accent-color);
   }
@@ -147,9 +147,9 @@ body {
     width: 480px;
   }
 }
-@media screen and (min-width: 700px) {
+@media screen and (min-width: 650px) {
   .container {
-    width: 700px;
+    width: 650px;
   }
 }
 @media screen and (min-width: 768px) {
@@ -242,7 +242,7 @@ body {
     padding: 48px 40px;
   }
 }
-@media screen and (min-width: 700px) {
+@media screen and (min-width: 650px) {
   .mob-menu {
     display: none;
   }
@@ -318,7 +318,7 @@ body {
     color: var(--accent-color);
   }
 }
-@media screen and (min-width: 700px) {
+@media screen and (min-width: 650px) {
   .header {
     padding-top: 21px;
     padding-bottom: 21px;
@@ -332,36 +332,41 @@ body {
     color: var(--accent-color);
   }
   .nav__logo {
-    margin-right: 44px;
+    margin-right: 22px;
   }
 }
-@media screen and (min-width: 700px) and (min-width: 768px) {
+@media screen and (min-width: 650px) and (min-width: 768px) {
   .nav__logo {
     margin-right: 88px;
   }
 }
-@media screen and (min-width: 700px) and (min-width: 1200px) {
+@media screen and (min-width: 650px) and (min-width: 1200px) {
   .nav__logo {
     margin-right: 93px;
   }
 }
-@media screen and (min-width: 700px) {
+@media screen and (min-width: 650px) {
   .nav__list {
     display: flex;
     align-items: center;
   }
 }
-@media screen and (min-width: 700px) {
+@media screen and (min-width: 650px) {
+  .nav__item:not(:first-child) {
+    margin-left: 25px;
+  }
+}
+@media screen and (min-width: 650px) and (min-width: 768px) {
   .nav__item:not(:first-child) {
     margin-left: var(--first-margin);
   }
 }
-@media screen and (min-width: 700px) {
+@media screen and (min-width: 650px) {
   .nav__item {
     position: relative;
   }
 }
-@media screen and (min-width: 700px) {
+@media screen and (min-width: 650px) {
   .nav__link {
     padding: 24px 0;
     font-weight: 500;
@@ -372,12 +377,12 @@ body {
     transition: color 250ms cubic-bezier(var(--cubic-bezier));
   }
 }
-@media screen and (min-width: 700px) {
+@media screen and (min-width: 650px) {
   .nav__contacts {
     margin-left: auto;
   }
 }
-@media screen and (min-width: 700px) and (min-width: 700px) {
+@media screen and (min-width: 650px) and (min-width: 650px) {
   .nav__mob-menu {
     display: none;
   }
@@ -385,7 +390,7 @@ body {
     display: none;
   }
 }
-@media screen and (min-width: 700px) {
+@media screen and (min-width: 650px) {
   .contacts {
     display: flex;
     flex-direction: column;
@@ -407,7 +412,7 @@ body {
     color: var(--accent-color);
   }
 }
-@media screen and (min-width: 700px) {
+@media screen and (min-width: 650px) {
   .mail-icon,
 .phone-icon {
     color: currentColor;
@@ -449,7 +454,7 @@ body {
     text-align: center;
   }
 }
-@media screen and (min-width: 700px) {
+@media screen and (min-width: 650px) {
   .footer__list--wrap {
     display: flex;
     justify-content: space-around;
@@ -615,7 +620,7 @@ body {
   background-color: var(--secondary-background);
   box-shadow: var(--box-shadow-four);
 }
-@media screen and (min-width: 700px) {
+@media screen and (min-width: 650px) {
   .submit__input--field {
     display: flex;
     margin: 0 auto;
@@ -668,20 +673,20 @@ body {
     background-size: cover;
   }
 }
-@media screen and (min-width: 700px) {
+@media screen and (min-width: 650px) {
   .hero {
     background-image: linear-gradient(var(--six-background), var(--six-background)), url(..//images/hero-bg-tab.jpg);
     max-width: 768px;
     margin: 0 auto;
   }
 }
-@media screen and (min-width: 700px) and (min-device-pixel-ratio: 2), screen and (min-width: 700px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 700px) and (min-resolution: 192dpi), screen and (min-width: 700px) and (min-resolution: 2dppx) {
+@media screen and (min-width: 650px) and (min-device-pixel-ratio: 2), screen and (min-width: 650px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 650px) and (min-resolution: 192dpi), screen and (min-width: 650px) and (min-resolution: 2dppx) {
   .hero {
     background-image: linear-gradient(var(--six-background), var(--six-background)), url(..//images/hero-bg-tab-2x.jpg);
     background-size: cover;
   }
 }
-@media screen and (min-width: 700px) and (min-device-pixel-ratio: 3), screen and (min-width: 700px) and (-webkit-min-device-pixel-ratio: 3), screen and (min-width: 700px) and (min-resolution: 288dpi), screen and (min-width: 700px) and (min-resolution: 3dppx) {
+@media screen and (min-width: 650px) and (min-device-pixel-ratio: 3), screen and (min-width: 650px) and (-webkit-min-device-pixel-ratio: 3), screen and (min-width: 650px) and (min-resolution: 288dpi), screen and (min-width: 650px) and (min-resolution: 3dppx) {
   .hero {
     background-image: linear-gradient(var(--six-background), var(--six-background)), url(..//images/hero-bg-tab-3x.jpg);
     background-size: cover;
@@ -758,7 +763,7 @@ body {
   margin-left: var(--second-margin);
   margin-bottom: var(--second-margin);
 }
-@media screen and (min-width: 700px) {
+@media screen and (min-width: 650px) {
   .features__item {
     flex-basis: calc(50% - var(--second-margin));
   }
@@ -866,7 +871,7 @@ body {
   color: var(--secondary-title);
 }
 
-@media screen and (min-width: 700px) {
+@media screen and (min-width: 650px) {
   .team-card__list {
     display: flex;
     flex-wrap: wrap;
@@ -992,7 +997,7 @@ body {
   border-color: var(--accent-color);
   fill: var(--accent-color);
 }
-@media screen and (min-width: 700px) {
+@media screen and (min-width: 650px) {
   .benefits__item {
     flex-basis: calc(33.3333333333% - var(--second-margin));
   }
@@ -1020,7 +1025,7 @@ body {
   gap: var(--fitth-margin);
   margin-bottom: var(--second-margin);
 }
-@media screen and (min-width: 700px) {
+@media screen and (min-width: 650px) {
   .filter__list {
     justify-content: center;
   }
@@ -1111,7 +1116,7 @@ body {
 .card__link:hover, .card__link:focus {
   box-shadow: var(--box-shadow-second);
 }
-@media screen and (min-width: 700px) {
+@media screen and (min-width: 650px) {
   .card__item {
     flex-basis: calc((100% - var(--second-margin)) / 2);
   }

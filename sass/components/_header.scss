@@ -96,7 +96,7 @@
     }
 
     &__logo {
-      margin-right: 44px;
+      margin-right: 22px;
 
       @include tablet-l {
         margin-right: 88px;
@@ -113,7 +113,11 @@
     }
 
     &__item:not(:first-child) {
-      margin-left: var(--first-margin);
+      margin-left: 25px;
+
+      @include tablet-l {
+        margin-left: var(--first-margin);
+      }
     }
 
     &__item {
