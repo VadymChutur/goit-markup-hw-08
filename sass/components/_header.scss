@@ -96,7 +96,12 @@
     }
 
     &__logo {
-      margin-right: 88px;
+      margin-right: 44px;
+
+      @include tablet-l {
+        margin-right: 88px;
+      }
+
       @include desktop {
         margin-right: 93px;
       }
