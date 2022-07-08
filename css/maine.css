@@ -1151,6 +1151,11 @@ body {
   background-color: var(--third-background);
   transition: opacity 250ms cubic-bezier(var(--cubic-bezier)), transform 250ms cubic-bezier(var(--cubic-bezier));
 }
+@media screen and (max-width: 420px) {
+  .modal {
+    min-width: 320px;
+  }
+}
 @media screen and (min-width: 1200px) {
   .modal {
     min-width: 528px;

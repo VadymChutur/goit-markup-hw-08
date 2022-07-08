@@ -33,6 +33,10 @@
   border-radius: 4px;
   background-color: var(--third-background);
 
+  @include mobile320 {
+    min-width: 320px;
+  }
+
   @include desktop {
     min-width: 528px;
     min-height: 581px;
