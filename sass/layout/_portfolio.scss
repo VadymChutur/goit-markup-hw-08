@@ -71,9 +71,15 @@
 
   &__copy {
     @include mobile320 {
-      padding: 31px 12px;
-      @include font-face(null, null, 14px, 1.14, 0.03em);
+      // padding: 31px 12px;
+      // @include font-face(null, null, 14px, 1.14, 0.03em);
     }
+
+    @include tablet {
+      padding: 31px 12px;
+      @include font-face(null, null, 18px, 1.55, 0.03em);
+    }
+
     position: absolute;
     transform: translateY(120%);
     top: 0;
@@ -124,8 +130,11 @@
     &__item {
       flex-basis: calc((100% - var(--second-margin)) / 2);
     }
+  }
 
+  @include tablet-l {
     &__copy {
+      @include font-face(null, 400, 18px, 1.56, 0.03em);
       padding: 49px 24px 77px 24px;
     }
   }

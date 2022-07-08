@@ -86,6 +86,12 @@
   }
 }
 
+@include mobile320 {
+  .container__mob-menu {
+    padding: 48px 40px 68px 40px;
+  }
+}
+
 @include tablet {
   .mob-menu {
     display: none;
