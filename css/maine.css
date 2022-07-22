@@ -120,7 +120,6 @@ body {
   .header-list .current {
     color: var(--accent-color);
   }
-
   .current::after {
     position: absolute;
     display: block;
@@ -241,7 +240,6 @@ body {
   .mob-menu__current {
     color: var(--accent-color);
   }
-
   .container__mob-menu {
     display: flex;
     flex-direction: column;
@@ -304,7 +302,6 @@ body {
     padding-top: 16px;
     padding-bottom: 16px;
   }
-
   .nav__list {
     display: none;
   }
@@ -338,7 +335,6 @@ body {
     padding-top: 21px;
     padding-bottom: 21px;
   }
-
   .nav {
     display: flex;
     align-items: center;
@@ -444,7 +440,6 @@ body {
     padding-top: 24px;
     padding-bottom: 25px;
   }
-
   .contacts {
     flex-direction: row;
     align-items: center;
@@ -1091,19 +1086,35 @@ body {
   left: 0;
   width: 100%;
   height: 100%;
-  padding: 77px 24px;
-  font-size: 18px;
-  line-height: 1.56;
+  padding: 15px 6px;
+  font-size: 14px;
+  line-height: 1.14;
   letter-spacing: 0.03em;
   color: var(--main-title);
   background-color: var(--eight-background);
   transition: transform 250ms cubic-bezier(var(--cubic-bezier));
+}
+@media screen and (min-width: 320px) and (max-width: 479px) {
+  .card__copy {
+    padding: 31px 12px;
+    font-size: 16px;
+    line-height: 1.14;
+    letter-spacing: 0.03em;
+  }
 }
 @media screen and (min-width: 650px) {
   .card__copy {
     padding: 31px 12px;
     font-size: 18px;
     line-height: 1.55;
+    letter-spacing: 0.03em;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .card__copy {
+    padding: 77px 24px;
+    font-size: 18px;
+    line-height: 1.56;
     letter-spacing: 0.03em;
   }
 }

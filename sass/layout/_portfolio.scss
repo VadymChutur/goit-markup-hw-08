@@ -70,9 +70,22 @@
   }
 
   &__copy {
-    @include mobile320 {
-      // padding: 31px 12px;
-      // @include font-face(null, null, 14px, 1.14, 0.03em);
+    position: absolute;
+    transform: translateY(120%);
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    padding: 15px 6px;
+
+    @include font-face(null, null, 14px, 1.14, 0.03em);
+
+    color: var(--main-title);
+    background-color: var(--eight-background);
+
+    @include mobile-to-mobile {
+      padding: 31px 12px;
+      @include font-face(null, null, 16px, 1.14, 0.03em);
     }
 
     @include tablet {
@@ -80,17 +93,10 @@
       @include font-face(null, null, 18px, 1.55, 0.03em);
     }
 
-    position: absolute;
-    transform: translateY(120%);
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    padding: 77px 24px;
-
-    @include font-face(null, null, 18px, 1.56, 0.03em);
-    color: var(--main-title);
-    background-color: var(--eight-background);
+    @include desktop {
+      padding: 77px 24px;
+      @include font-face(null, null, 18px, 1.56, 0.03em);
+    }
 
     transition: transform 250ms cubic-bezier(var(--cubic-bezier));
   }
